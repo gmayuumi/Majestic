@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barbearia Majestic: A barbearia que une tradição e luxo em cada detalhe. Agende agora e descubra o cuidado que você merece.">
+
+    <title>Barbearia Majestic - Transforme seu visual. Viva a experiência.</title>
+
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
+  
+    <link rel="stylesheet" href="style.css">
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <a href="https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." target="_blank" class="whatsapp-float" aria-label="Agendar via WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#f9f9f9" aria-hidden="true" focusable="false"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21c5.46 0 9.91-4.45 9.91-9.91c0-5.46-4.45-9.91-9.91-9.91zm4.2 12.09c-.25.59-.83 1.04-1.57 1.19c-.58.12-1.18.12-1.78-.06c-.59-.18-1.42-.56-2.65-1.54c-1.28-.9-2.09-2.02-2.32-2.38c-.24-.36-.58-.87-.58-1.59c0-.72.48-1.11.66-1.29c.18-.18.39-.23.53-.23h.34c.18 0 .38.01.57.29c.18.29.62 1.5.68 1.61c.06.12.1.26 0 .39c-.11.13-.18.23-.33.39c-.15.17-.28.3-.41.42c-.11.12-.23.26-.08.5c.15.24.64.99 1.35 1.61c.95.84 1.68 1.13 1.92 1.26c.24.13.38.11.53-.05c.14-.17.62-.73.78-.97c.17-.24.33-.18.58-.12c.24.06 1.5.71 1.76.82c.26.12.44.18.5.28c.04.1.02.59-.23 1.18z"/></svg>
+    </a>
+    
+    <header id="main-header">
+        <nav class="container">
+            <a href="#" class="logo">Majestic</a>
+            <button id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-nav">
+                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <ul id="main-nav">
+                <li><a href="#about">A Barbearia</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#team">Nossos Mestres</a></li>
+                <li><a href="#location">Localização</a></li>
+                <li>
+                    <a href="#contact-cta" class="cta-button-secondary">
+                        <span>Agendar</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <svg class="floating-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true" focusable="false"><title>Ícone de tesoura animada</title><path d="M22.28 8.12a2.33 2.33 0 0 0-3.3 0l-4.66 4.66l-1.4-1.4l7.15-7.15c.9-.9.23-2.31-1.03-2.31H10.1c-1.28 0-1.93 1.41-1.03 2.31l3.52 3.52l-3.32 3.32c-1.39-1.29-3.4-1.89-5.46-1.32L1 21.28a2.33 2.33 0 0 0 3.3 0l6.3-6.3l3.3 3.3l-5.6 5.6a2.33 2.33 0 0 0 3.3 0l1.79-1.79c.64-1.92.09-4.04-1.32-5.45l2.42-2.42l4.8 4.8a2.33 2.33 0 0 0 3.3 0l1.83-1.83a2.33 2.33 0 0 0 0-3.3ZM4.12 19.88l-1.39-1.39l2.76-2.76c.72.26 1.48.33 2.22.18l-3.6 3.97ZM12 6.51L9.17 3.69h2.32c.15 0 .28.06.38.16l.13.13z M8 12.33a2.67 2.67 0 1 1-5.34 0a2.67 2.67 0 0 1 5.34 0zm11 0a2.67 2.67 0 1 1-5.34 0a2.67 2.67 0 0 1 5.34 0z"/></svg>
+                <h1 class="reveal">Transforme o seu visual. <br> Viva a experiência Majestic.</h1>
+                <p class="reveal">A barbearia que une tradição e luxo em cada detalhe. Agende agora e descubra o cuidado que você merece.</p>
+                <a href="https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." target="_blank" class="cta-button reveal">
+                    <span>AGENDAR VIA WHATSAPP</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#121212" aria-hidden="true" focusable="false"><title>Ícone do WhatsApp</title><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21c5.46 0 9.91-4.45 9.91-9.91c0-5.46-4.45-9.91-9.91-9.91zm4.2 12.09c-.25.59-.83 1.04-1.57 1.19c-.58.12-1.18.12-1.78-.06c-.59-.18-1.42-.56-2.65-1.54c-1.28-.9-2.09-2.02-2.32-2.38c-.24-.36-.58-.87-.58-1.59c0-.72.48-1.11.66-1.29c.18-.18.39-.23.53-.23h.34c.18 0 .38.01.57.29c.18.29.62 1.5.68 1.61c.06.12.1.26 0 .39c-.11.13-.18.23-.33.39c-.15.17-.28.3-.41.42c-.11.12-.23.26-.08.5c.15.24.64.99 1.35 1.61c.95.84 1.68 1.13 1.92 1.26c.24.13.38.11.53-.05c.14-.17.62-.73.78-.97c.17-.24.33-.18.58-.12c.24.06 1.5.71 1.76.82c.26.12.44.18.5.28c.04.1.02.59-.23 1.18z"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title reveal">Nossos Rituais de Cuidado</h2>
+                <div class="services-carousel-wrapper reveal">
+                    <div class="swiper services-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="swiper-slide service-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true" focusable="false"><title>Ícone de Tesoura</title><path d="M22.28 8.12a2.33 2.33 0 0 0-3.3 0l-4.66 4.66l-1.4-1.4l7.15-7.15c.9-.9.23-2.31-1.03-2.31H10.1c-1.28 0-1.93 1.41-1.03 2.31l3.52 3.52l-3.32 3.32c-1.39-1.29-3.4-1.89-5.46-1.32L1 21.28a2.33 2.33 0 0 0 3.3 0l6.3-6.3l3.3 3.3l-5.6 5.6a2.33 2.33 0 0 0 3.3 0l1.79-1.79c.64-1.92.09-4.04-1.32-5.45l2.42-2.42l4.8 4.8a2.33 2.33 0 0 0 3.3 0l1.83-1.83a2.33 2.33 0 0 0 0-3.3ZM4.12 19.88l-1.39-1.39l2.76-2.76c.72.26 1.48.33 2.22.18l-3.6 3.97ZM12 6.51L9.17 3.69h2.32c.15 0 .28.06.38.16l.13.13z M8 12.33a2.67 2.67 0 1 1-5.34 0a2.67 2.67 0 0 1 5.34 0zm11 0a2.67 2.67 0 1 1-5.34 0a2.67 2.67 0 0 1 5.34 0z"/></svg>
+                                <h3>Corte Majestic</h3>
+                                <p>Análise visagista, corte de precisão e finalização com produtos importados.</p>
+                            </article>
+                            <article class="swiper-slide service-card most-wanted">
+                                <div class="seal-wrapper"><span class="seal">MAIS PROCURADO</span></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true" focusable="false"><title>Ícone de Navalha</title><path d="M22.39 3.51a1 1 0 0 0-1.41-1.41L18 5.17l-1-1a3 3 0 0 0-4.24 0l-3.23 3.23L4.69 2.56a1 1 0 0 0-1.41 1.41l4.84 4.84-2.83 2.83a3 3 0 0 0 0 4.24l3.18 3.18 4.24 4.24a3 3 0 0 0 4.24 0l2.83-2.83 3.5-3.5a1 1 0 0 0 0-1.41zM11.9 19.34a1 1 0 0 1-1.41 0l-4.24-4.24l-3.18-3.18a1 1 0 0 1 0-1.41l2.83-2.83L17.27 19H9.41a1 1 0 0 0-1.41 1.41l3.9 3.9zM19.43 12L13 18.43l-1.41-1.41L18 10.59l1.41 1.41z"/></svg>
+                                <h3>Barba Imperial</h3>
+                                <p>Ritual completo com toalha quente, esfoliação e óleos essenciais para uma barba impecável.</p>
+                            </article>
+                            <article class="swiper-slide service-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true" focusable="false"><title>Ícone de Coroa</title><path d="M2.5 7.5L5 19h14l2.5-11.5L20 6l-3.5 4-4.5-6.5-4.5 6.5L4 6z"/></svg>
+                                <h3>Pacote Imperador</h3>
+                                <p>A experiência completa. Corte Majestic, Barba Imperial e um drink cortesia.</p>
+                            </article>
+                            <article class="swiper-slide service-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true" focusable="false"><title>Ícone de Escova</title><path d="M20 3h-6a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-6 4h6V4h-6zM6 8a4 4 0 0 0-4 4v9a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-9a4 4 0 0 0-4-4zm4 12H4v-8a2 2 0 0 1 2-2a2 2 0 0 1 2 2v8z"/></svg>
+                                <h3>Tratamento Capilar</h3>
+                                <p>Hidratação profunda e terapia para revitalizar fios e couro cabeludo.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev services-arrow"></div>
+                    <div class="swiper-button-next services-arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container grid-2-cols">
+                <div class="about-text reveal">
+                    <h2>Tradição e Modernidade<br>em Cada Detalhe</h2>
+                    <p>Fundada sob o pilar da excelência, a Barbearia Majestic resgata a arte clássica da barbearia, combinando-a com as técnicas mais modernas e um ambiente de conforto inigualável. Aqui, cada cliente é único e cada serviço é uma obra de arte.</p>
+                    <div class="about-icons">
+                        <div class="icon-item"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#d4af37"><title>Ícone de Cadeira de Barbeiro</title><path d="M20.5 2h-17C2.67 2 2 2.67 2 3.5V11h5.08c.63-2.34 2.8-4 5.42-4s4.79 1.66 5.42 4H23V3.5C23 2.67 22.33 2 21.5 2zM12.5 7c-1.38 0-2.5 1.12-2.5 2.5S11.12 12 12.5 12s2.5-1.12 2.5-2.5S13.88 7 12.5 7zm-2 9H9.21c-.45 0-.85.33-.94.77l-.6 3A1 1 0 0 0 8.66 21H11v1h3v-1h2.34a1 1 0 0 0 .99-1.23l-.6-3a1 1 0 0 0-.94-.77H15v-2h-3v2zm6.92-2H17v-3c0-2.76-2.24-5-5-5s-5 2.24-5 5v3H2V12h21v2.92z"/></svg><span>Conforto Absoluto</span></div>
+                        <div class="icon-item"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#d4af37"><title>Ícone de Navalha Afiada</title><path d="M22.39 3.51a1 1 0 0 0-1.41-1.41L18 5.17l-1-1a3 3 0 0 0-4.24 0l-3.23 3.23L4.69 2.56a1 1 0 0 0-1.41 1.41l4.84 4.84-2.83 2.83a3 3 0 0 0 0 4.24l3.18 3.18 4.24 4.24a3 3 0 0 0 4.24 0l2.83-2.83 3.5-3.5a1 1 0 0 0 0-1.41zM11.9 19.34a1 1 0 0 1-1.41 0l-4.24-4.24l-3.18-3.18a1 1 0 0 1 0-1.41l2.83-2.83L17.27 19H9.41a1 1 0 0 0-1.41 1.41l3.9 3.9zM19.43 12L13 18.43l-1.41-1.41L18 10.59l1.41 1.41z"/></svg><span>Precisão Milimétrica</span></div>
+                        <div class="icon-item"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#d4af37"><title>Ícone de Toalha Quente</title><path d="M5.5 21a1.5 1.5 0 0 1-1.5-1.5V12a8 8 0 0 1 16 0v7.5a1.5 1.5 0 0 1-1.5 1.5Zm0-2h13V12a6.5 6.5 0 0 0-13 0Zm4.06-9.15a2.76 2.76 0 0 1 3.9-.38a2.6 2.6 0 0 1 0 3.78c-.28.27-.6.47-.94.59v.53a.75.75 0 1 1-1.5 0v-1a.76.76 0 0 1 .2-.49a1.26 1.26 0 0 0-.2-1.93a1.27 1.27 0 0 0-1.86.37a.75.75 0 1 1-1.3-.76c.45-.7.88-1.28 2.6-1.5Zm4.88 0c1.72-.21 2.15.8 2.6 1.5a.75.75 0 0 1-1.3.76a1.27 1.27 0 0 0-1.86-.37a1.26 1.26 0 0 0-.2 1.93a.76.76 0 0 1 .2.49v1a.75.75 0 1 1-1.5 0v-.53a2.72 2.72 0 0 1-.94-.6a2.6 2.6 0 0 1 0-3.78a2.76 2.76 0 0 1 3-0.38Z"/></svg><span>Rituais Exclusivos</span></div>
+                    </div>
+                </div>
+                <div class="about-image-wrapper">
+                    <div class="about-image" style="background-image: url('https://images.pexels.com/photos/2061820/pexels-photo-2061820.jpeg');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="transformations" class="transformations-section">
+            <div class="container reveal">
+                <h2 class="section-title">Sua Imagem, Nossa Assinatura.</h2>
+                <p class="section-subtitle">Antes? Comum. Depois? Majestic.</p>
+                <div class="comparison-slider">
+                    <figure class="comparison-item">
+                        <div class="comparison-image" style="background-image: url('https://i.ibb.co/PvmvXpdm/1-antes.jpg')"></div>
+                        <div class="comparison-image after" style="background-image: url('https://i.ibb.co/NhdJXQp/2-depois.jpg')"></div>
+                        <div class="comparison-handle">
+                            <div class="handle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true" focusable="false"><title>Deslize para comparar</title><path d="m8.5 19.3l9-7.3a1 1 0 0 0 0-1.6L8.5 3.1A1 1 0 0 0 7 4v16a1 1 0 0 0 1.5.8ZM9 5.4l6.4 5.2L9 15.8Z M17 4v16a1 1 0 0 0 2 0V4a1 1 0 0 0-2 0Z"/></svg>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container reveal">
+                <h2 class="section-title">Mais de 2.000 homens transformados com excelência.</h2>
+                <div class="swiper testimonials-swiper">
+                    <div class="swiper-wrapper">
+                        <blockquote class="swiper-slide testimonial-card">
+                            <img src="https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Foto do cliente João Silva" class="client-photo">
+                            <h3>João Silva</h3>
+                            <span>Serviço: Corte Majestic</span>
+                            <div class="stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            </div>
+                            <p>"O melhor atendimento que já recebi. A equipe é extremamente profissional e o ambiente impecável."</p>
+                        </blockquote>
+                        <blockquote class="swiper-slide testimonial-card">
+                            <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Foto do cliente Carlos Andrade" class="client-photo">
+                            <h3>Carlos Andrade</h3>
+                            <span>Serviço: Pacote Imperador</span>
+                            <div class="stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            </div>
+                            <p>"A Majestic não é só uma barbearia, é uma experiência. Saí de lá renovado na confiança."</p>
+                        </blockquote>
+                        <blockquote class="swiper-slide testimonial-card">
+                            <img src="https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Foto do cliente Ricardo Borges" class="client-photo">
+                            <h3>Ricardo Borges</h3>
+                            <span>Serviço: Barba Imperial</span>
+                            <div class="stars" role="img" aria-label="Avaliação: 5 de 5 estrelas">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            </div>
+                            <p>"Profissionais que realmente entendem do assunto. Sugeriram o corte perfeito. Virei cliente fiel."</p>
+                        </blockquote>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title reveal">Nossos Rituais de Cuidado</h2>
+                <div class="services-carousel-wrapper reveal">
+                    <div class="swiper services-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="swiper-slide service-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true" focusable="false"><title>Ícone de Tesoura</title><path d="M22.28 8.12a2.33 2.33 0 0 0-3.3 0l-4.66 4.66l-1.4-1.4l7.15-7.15c.9-.9.23-2.31-1.03-2.31H10.1c-1.28 0-1.93 1.41-1.03 2.31l3.52 3.52l-3.32 3.32c-1.39-1.29-3.4-1.89-5.46-1.32L1 21.28a2.33 2.33 0 0 0 3.3 0l6.3-6.3l3.3 3.3l-5.6 5.6a2.33 2.33 0 0 0 3.3 0l1.79-1.79c.64-1.92.09-4.04-1.32-5.45l2.42-2.42l4.8 4.8a2.33 2.33 0 0 0 3.3 0l1.83-1.83a2.33 2.33 0 0 0 0-3.3ZM4.12 19.88l-1.39-1.39l2.76-2.76c.72.26 1.48.33 2.22.18l-3.6 3.97ZM12 6.51L9.17 3.69h2.32c.15 0 .28.06.38.16l.13.13z M8 12.33a2.67 2.67 0 1 1-5.34 0a2.67 2.67 0 0 1 5.34 0zm11 0a2.67 2.67 0 1 1-5.34 0a2.67 2.67 0 0 1 5.34 0z"/></svg>
+                                <h3>Corte Majestic</h3>
+                                <p>Análise visagista, corte de precisão e finalização com produtos importados.</p>
+                            </article>
+                            <article class="swiper-slide service-card most-wanted">
+                                <div class="seal-wrapper"><span class="seal">MAIS PROCURADO</span></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true" focusable="false"><title>Ícone de Navalha</title><path d="M22.39 3.51a1 1 0 0 0-1.41-1.41L18 5.17l-1-1a3 3 0 0 0-4.24 0l-3.23 3.23L4.69 2.56a1 1 0 0 0-1.41 1.41l4.84 4.84-2.83 2.83a3 3 0 0 0 0 4.24l3.18 3.18 4.24 4.24a3 3 0 0 0 4.24 0l2.83-2.83 3.5-3.5a1 1 0 0 0 0-1.41zM11.9 19.34a1 1 0 0 1-1.41 0l-4.24-4.24l-3.18-3.18a1 1 0 0 1 0-1.41l2.83-2.83L17.27 19H9.41a1 1 0 0 0-1.41 1.41l3.9 3.9zM19.43 12L13 18.43l-1.41-1.41L18 10.59l1.41 1.41z"/></svg>
+                                <h3>Barba Imperial</h3>
+                                <p>Ritual completo com toalha quente, esfoliação e óleos essenciais para uma barba impecável.</p>
+                            </article>
+                            <article class="swiper-slide service-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true" focusable="false"><title>Ícone de Coroa</title><path d="M2.5 7.5L5 19h14l2.5-11.5L20 6l-3.5 4-4.5-6.5-4.5 6.5L4 6z"/></svg>
+                                <h3>Pacote Imperador</h3>
+                                <p>A experiência completa. Corte Majestic, Barba Imperial e um drink cortesia.</p>
+                            </article>
+                            <article class="swiper-slide service-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true" focusable="false"><title>Ícone de Escova</title><path d="M20 3h-6a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-6 4h6V4h-6zM6 8a4 4 0 0 0-4 4v9a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-9a4 4 0 0 0-4-4zm4 12H4v-8a2 2 0 0 1 2-2a2 2 0 0 1 2 2v8z"/></svg>
+                                <h3>Tratamento Capilar</h3>
+                                <p>Hidratação profunda e terapia para revitalizar fios e couro cabeludo.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev services-arrow"></div>
+                    <div class="swiper-button-next services-arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <h2 class="section-title reveal">Nossos Mestres da Navalha</h2>
+                <div class="team-grid">
+                    <div class="team-card reveal">
+                        <div class="team-card-inner">
+                            <div class="team-card-front">
+                                <img src="https://images.pexels.com/photos/33090604/pexels-photo-33090604.jpeg" alt="Foto do barbeiro Arthur Valente">
+                                <div class="team-info-front">
+                                    <h3>Arthur Valente</h3>
+                                    <p>Especialista em Cortes Clássicos</p>
+                                </div>
+                            </div>
+                            <div class="team-card-back">
+                                <h3>Arthur Valente</h3>
+                                <p>Com 12 anos de experiência, Arthur é um purista da tesoura e mestre em visagismo, transformando cortes em declarações de estilo.</p>
+                                <div class="social-icons">
+                                    <a href="#" aria-label="Instagram de Arthur Valente" title="Instagram de Arthur Valente"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card reveal">
+                         <div class="team-card-inner">
+                            <div class="team-card-front">
+                                <img src="https://images.pexels.com/photos/30994243/pexels-photo-30994243.jpeg" alt="Foto do barbeiro Bruno Rocha">
+                                <div class="team-info-front">
+                                    <h3>Bruno Rocha</h3>
+                                    <p>Mestre em Barboterapia</p>
+                                </div>
+                            </div>
+                            <div class="team-card-back">
+                                <h3>Bruno Rocha</h3>
+                                <p>Bruno eleva o ato de barbear a um ritual de relaxamento e precisão. Suas técnicas com navalha são lendárias.</p>
+                                 <div class="social-icons">
+                                    <a href="#" aria-label="Instagram de Bruno Rocha" title="Instagram de Bruno Rocha"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card reveal">
+                         <div class="team-card-inner">
+                            <div class="team-card-front">
+                                <img src="https://images.pexels.com/photos/1818431/pexels-photo-1818431.jpeg" alt="Foto do barbeiro Lucas Martins">
+                                <div class="team-info-front">
+                                    <h3>Lucas Martins</h3>
+                                    <p>Expert em Estilos Modernos</p>
+                                </div>
+                            </div>
+                            <div class="team-card-back">
+                                <h3>Lucas Martins</h3>
+                                <p>Antenado às últimas tendências, Lucas é o artista ideal para cortes arrojados, fades perfeitos e coloração masculina.</p>
+                                 <div class="social-icons">
+                                    <a href="#" aria-label="Instagram de Lucas Martins" title="Instagram de Lucas Martins"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="location" class="location-section">
+            <div class="container">
+                <h2 class="section-title reveal">Nossa Localização Privilegiada</h2>
+                <div class="location-content grid-2-cols reveal">
+                    <div class="location-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.241315518298!2d-46.74609172464795!3d-23.631599378750834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce513e9233cc79%3A0x2884a4a5a54e954e!2sAv.%20Giovanni%20Gronchi%2C%205819%20-%20Vila%20Andrade%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005724-002!5e0!3m2!1spt-BR!2sbr!4v1679509438214!5m2!1spt-BR!2sbr" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Localização da Barbearia Majestic no Google Maps">
+                        </iframe>
+                    </div>
+                    <div class="location-details">
+                        <h3>Visite-nos no Morumbi</h3>
+                        <p>Nosso espaço foi pensado para oferecer uma experiência única em um dos bairros mais nobres de São Paulo.</p>
+                        <address>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5z"/></svg>
+                            <span>
+                                Av. Giovanni Gronchi, 5819<br>
+                                Vila Andrade (Morumbi), São Paulo - SP
+                            </span>
+                        </address>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Giovanni+Gronchi,+5819+-+Vila+Andrade,+S%C3%A3o+Paulo+-+SP" target="_blank" class="cta-button-secondary">
+                            <span>Traçar Rota no Mapa</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-footer-section">
+            <div class="container">
+                <h2>Agende agora e descubra o padrão Majestic de excelência.</h2>
+                <a href="https://wa.me/5511987654321?text=Olá!%20Quero%20agendar%20um%20horário." target="_blank" class="cta-button">FALAR NO WHATSAPP</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-logo">Majestic</div>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#about">A Barbearia</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#transformations">Transformações</a></li>
+                        <li><a href="#team">Equipe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Endereço</h4>
+                    <address>
+                        Av. Giovanni Gronchi, 5819<br>
+                        Morumbi, São Paulo - SP<br>
+                        <a href="https://maps.google.com/?q=Av.+Giovanni+Gronchi,+5819" target="_blank" class="map-link">Ver no Google Maps</a>
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <p><a href="mailto:contato@majestic.com">xxxxxx@majestic.com</a></p>
+                    <p><a href="tel:+5511987654321">(XX) XXXXX-XXX</a></p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></svg></a>
+                        <a href="#" aria-label="Facebook" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96c0 4.97 3.62 9.13 8.44 9.86v-7H7.9v-2.89h2.58V9.55c0-2.55 1.5-3.96 3.86-3.96c1.13 0 2.29.21 2.29.21v2.46h-1.29c-1.25 0-1.66.78-1.66 1.6v1.94h2.78l-.44 2.89h-2.34v7.02c4.82-.73 8.44-4.89 8.44-9.86C21.96 6.5 17.5 2.04 12 2.04Z"/></svg></a>
+                        <a href="#" aria-label="WhatsApp" title="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21c5.46 0 9.91-4.45 9.91-9.91c0-5.46-4.45-9.91-9.91-9.91zm4.2 12.09c-.25.59-.83 1.04-1.57 1.19c-.58.12-1.18.12-1.78-.06c-.59-.18-1.42-.56-2.65-1.54c-1.28-.9-2.09-2.02-2.32-2.38c-.24-.36-.58-.87-.58-1.59c0-.72.48-1.11.66-1.29c.18-.18.39-.23.53-.23h.34c.18 0 .38.01.57.29c.18.29.62 1.5.68 1.61c.06.12.1.26 0 .39c-.11.13-.18.23-.33.39c-.15.17-.28.3-.41.42c-.11.12-.23.26-.08.5c.15.24.64.99 1.35 1.61c.95.84 1.68 1.13 1.92 1.26c.24.13.38.11.53-.05c.14-.17.62-.73.78-.97c.17-.24.33-.18.58-.12c.24.06 1.5.71 1.76.82c.26.12.44.18.5.28c.04.1.02.59-.23 1.18z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Barbearia Majestic. Todos os direitos reservados. Design e Engenharia Digital por um Arquiteto de Software Sênior.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
