@@ -158,12 +158,28 @@ body.nav-open #main-nav li:nth-child(5) { transition-delay: 0.3s; }
 /* ------- HERO SECTION ------- */
 /* ------------------------ */
 .hero-section {
-    height: 100vh; min-height: 700px; display: flex; align-items: center; justify-content: center;
-    text-align: center; position: relative; padding: 0;
-    background-image: url('https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 0 2rem;
+}
+.hero-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.hero-background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(ellipse at center, rgba(18,18,18,0.5) 0%, rgba(18,18,18,0.8) 100%); z-index: 1; }
 .hero-content { position: relative; z-index: 2; }
@@ -349,7 +365,16 @@ body.nav-open #main-nav li:nth-child(5) { transition-delay: 0.3s; }
 }
 
 @media (max-width: 767px) {
-    h1 { font-size: 4rem; } h2 { font-size: 3.2rem; }
+    h1 { font-size: 4rem; } 
+    h2 { font-size: 3.2rem; }
+    
+    .hero-section {
+        min-height: 100vh;
+    }
+    .hero-background-image img {
+        object-position: top center;
+    }
+
     .grid-2-cols { grid-template-columns: 1fr; gap: 4rem; }
     .about-section .grid-2-cols .about-text { order: -1; }
     .team-grid { grid-template-columns: 1fr; }
@@ -361,7 +386,8 @@ body.nav-open #main-nav li:nth-child(5) { transition-delay: 0.3s; }
 }
 
 @media (min-width: 768px) {
-    h1 { font-size: 6rem; } h2 { font-size: 4.8rem; }
+    h1 { font-size: 6rem; } 
+    h2 { font-size: 4.8rem; }
     .section-subtitle { font-size: 1.8rem; }
     .about-section .grid-2-cols { grid-template-columns: 1fr 1fr; gap: 8rem; }
     .about-image-wrapper { order: 2; } 
